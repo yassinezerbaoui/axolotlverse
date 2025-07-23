@@ -1,117 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AxolotlVerse.com is For Sale</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(180deg, #fff5f8, #f8c7d8); /* خلفية وردية فاتحة */
-      color: #553a63; /* لون الكتابة بنفسجي غامق */
-      text-align: center;
-      padding: 40px 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Domain For Sale: AxolotlVerse.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0e6f7; /* Light purple background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
+        .container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            max-width: 900px; /* Increased max-width to accommodate side-by-side layout */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.3em;
-      color: #553a63;
-    }
+        .nft-header {
+            background-color: #9c27b0; /* Darker purple for NFT header */
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
 
-    h2 {
-      font-size: 1.2em;
-      font-weight: normal;
-      margin-bottom: 1.5em;
-      color: #553a63;
-    }
+        .nft-image-container {
+            background-color: #e0b0ff; /* Lighter purple inside NFT box */
+            border-radius: 15px;
+            padding: 15px;
+            display: inline-block;
+            position: relative;
+        }
 
-    ul {
-      text-align: left;
-      list-style: none;
-      padding: 0;
-      margin-bottom: 2em;
-    }
+        .nft-image {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 10px; /* Slightly rounded image inside */
+            display: block;
+        }
 
-    ul li::before {
-      content: "🪐 ";
-    }
+        .nft-label {
+            background-color: #5d2592; /* Darker purple for NFT label */
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 15px;
+            display: inline-block;
+        }
 
-    ul li {
-      margin: 8px 0;
-    }
+        .heart-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            fill: #d1c4e9; /* Light purple for the heart icon */
+        }
 
-    .cta-button {
-      background-color: #c86fc9; /* زر بنفسجي وردي */
-      color: white;
-      padding: 14px 28px;
-      border: none;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.5em;
+            color: #5d2592; /* Dark purple for main heading */
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
 
-    .contact {
-      margin-top: 2em;
-      font-size: 0.9em;
-      color: #6a4e7c;
-    }
+        h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3.5em; /* Larger for domain name */
+            color: #6a1b9a; /* Even darker purple for domain */
+            margin-top: 0;
+            margin-bottom: 20px;
+            word-wrap: break-word; /* Ensure it wraps on smaller screens */
+        }
 
-    .footer {
-      margin-top: 3em;
-      font-size: 0.85em;
-      color: #9c7cb1;
-    }
+        p.tagline {
+            font-size: 1.2em;
+            color: #7b1fa2; /* Medium purple */
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
 
-    .mascot {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px #f3c8ea;
-    }
-  </style>
+        /* --- New/Modified Styles for Layout --- */
+        .main-content-area {
+            display: flex;
+            flex-direction: column; /* Default to column on small screens */
+            gap: 30px;
+            margin-bottom: 30px;
+            align-items: flex-start; /* Align content to start in columns */
+            text-align: left; /* Text alignment for features */
+        }
+
+        .features-column {
+            flex: 1; /* Takes equal space */
+            padding-left: 20px; /* Add some padding */
+            padding-right: 20px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default for small screens */
+            gap: 15px;
+            text-align: left;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            color: #5d2592; /* Dark purple for features */
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .feature-item svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #a049d0; /* Purple icon color */
+            flex-shrink: 0;
+        }
+
+        .offer-form-column {
+            flex: 1; /* Takes equal space */
+            padding-right: 20px; /* Add some padding */
+            padding-left: 20px;
+        }
+
+        .offer-form-container {
+            background-color: #f7e6ff; /* Lighter purple background for form */
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e0b0ff; /* Border matching the NFT box interior */
+            text-align: left;
+            max-width: 350px; /* Limit form width */
+            margin: 0 auto; /* Center the form within its column */
+        }
+
+        .offer-form-container h3 {
+            color: #6a1b9a;
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .offer-form-container input,
+        .offer-form-container textarea {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #d1c4e9; /* Light purple border */
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .offer-form-container input:focus,
+        .offer-form-container textarea:focus {
+            outline: none;
+            border-color: #a049d0;
+            box-shadow: 0 0 0 3px rgba(160, 73, 208, 0.2);
+        }
+
+        .send-button {
+            background-color: #e91e63; /* Pink button */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .send-button:hover {
+            background-color: #d81b60;
+        }
+
+        .make-offer-btn {
+            background-color: #e91e63; /* Pink button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.3em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 300px; /* Keep similar width as before */
+            margin: 20px auto 0 auto; /* Margin top to separate from title */
+            display: block;
+        }
+
+        .make-offer-btn:hover {
+            background-color: #d81b60;
+        }
+
+        .security-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5d2592;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 20px; /* Add margin top to separate from main content */
+        }
+
+        .security-info svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            fill: #a049d0;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .main-content-area {
+                flex-direction: row; /* Side-by-side on larger screens */
+                align-items: flex-start; /* Align content to top */
+            }
+
+            .features-column {
+                text-align: left; /* Ensure text aligns left */
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr; /* Two columns for features on larger screens */
+            }
+
+            .offer-form-column {
+                /* No specific changes needed here as it's flexed */
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 2.5em;
+            }
+            .container {
+                padding: 20px;
+            }
+            .make-offer-btn {
+                font-size: 1.1em;
+                padding: 12px 20px;
+            }
+            .send-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .features-column, .offer-form-column {
+                padding: 0; /* Remove horizontal padding on very small screens */
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div style="text-align: center;">
-      <img
-        src="https://pbs.twimg.com/media/Fs4u_9kWYBQVy-g?format=jpg&name=medium"
-        alt="Axolotl NFT"
-        class="mascot"
-      />
+    <div class="container">
+        <div class="nft-header">
+            <div class="nft-image-container">
+                
+<img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/c4b1b8a2-ee19-4c5c-8617-bbb3f4ade46d/753d64c9-8ea4-4c32-9890-96354dea2c06.png" alt="Axolotl NFT" class="nft-image">
+            </div>
+            <div class="nft-label">NFT</div>
+            <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </div>
+
+        <h1>THIS PREMIUM DOMAIN<br>IS FOR SALE:</h1>
+        <h2>AxolotlVerse.com</h2>
+        <p class="tagline">Perfect for your next Metaverase, NFT, or Gaming project</p>
+
+        <div class="main-content-area">
+            <div class="features-column">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15L6 12l1.41-1.41L11 14.17l4.59-4.59L17 11l-6 6z"/></svg>
+                        Brandable & memorable name
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15L6 12l1.41-1.41L11 14.17l4.59-4.59L17 11l-6 6z"/></svg>
+                        Premium.com &diamond; domain history
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15L6 12l1.41-1.41L11 14.17l4.59-4.59L17 11l-6 6z"/></svg>
+                        Suitable for future business ventures
+                    </div>
+                    <div class="feature-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15L6 12l1.41-1.41L11 14.17l4.59-4.59L17 11l-6 6z"/></svg>
+                        .com = Global reach & trust
+                    </div>
+                </div>
+                <button class="make-offer-btn">Make an Offer Today</button>
+            </div>
+
+            <div class="offer-form-column">
+                <div class="offer-form-container">
+                    <h3>Make an Offer Today</h3>
+                    <form action="#" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                        <button type="submit" class="send-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="security-info">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h-1V10h1v1.99zm-2 0H8v-2h2v2zM14 11h-2v-2h2v2z"/></svg>
+            Secure Transaction - Verified Domain Ownership
+        </div>
     </div>
-
-    <h1>THIS PREMIUM DOMAIN</h1>
-    <h1>IS FOR SALE:</h1>
-    <h1 style="font-size: 48px;">AxolotlVerse.com</h1>
-
-    <h2>Perfect for your next Metaverse, NFT, or Gaming project</h2>
-
-    <ul>
-      <li>Memorable & brandable</li>
-      <li>Ideal for Play-to-Earn or Web3 projects</li>
-      <li>.com = Global reach & trust</li>
-    </ul>
-
-    <a href="mailto:yzerbaoui94@gmail.com" class="cta-button">Make an Offer Today</a>
-
-    <div class="contact">
-      📩 For inquiries: <strong>yzerbaoui94@gmail.com</strong><br />
-      🔒 Secure Transaction – Verified Domain Ownership
-    </div>
-
-    <div class="footer">
-      AxolotlVerse.com – Your gateway to the future of Web3.
-    </div>
-  </div>
 </body>
 </html>
