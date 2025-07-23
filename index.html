@@ -37,7 +37,11 @@
             border-radius: 20px;
             padding: 20px;
             margin-bottom: 30px;
-            position: relative; /* مهم جداً لأيقونة القلب */
+            position: relative; /* مهم جداً لأيقونة القلب الصغير */
+            display: flex; /* باش نخليو العناصر اللي وسطو يتنسقو مزيان */
+            flex-direction: column; /* باش الصورة والـlabel يبقاو فوق بعضهم */
+            align-items: center; /* باش الصورة والـlabel يكونو ف الوسط */
+            justify-content: center; /* باش يكونو ف الوسط عمودياً */
         }
         .nft-image-container {
             background-color: #e0b0ff;
@@ -63,13 +67,13 @@
             margin-top: 15px;
             display: inline-block;
         }
-        /* ستايلات أيقونة القلب */
+        /* ستايلات أيقونة القلب الصغيرة */
         .heart-icon {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 30px;
-            height: 30px;
+            position: absolute; /* وضعها بالنسبة للـnft-header */
+            top: 20px; /* مسافة من الفوق */
+            right: 20px; /* مسافة من اليمين */
+            width: 30px; /* حجم الأيقونة */
+            height: 30px; /* حجم الأيقونة */
             color: white; /* لجعل لون الأيقونة أبيض */
         }
 
