@@ -33,21 +33,23 @@
             overflow: hidden;
         }
         .nft-header {
-            background-color: #9c27b0;
+            background-color: #9c27b0; /* اللون البنفسجي لخلفية الهيدر */
             border-radius: 20px;
             padding: 20px;
             margin-bottom: 30px;
             position: relative; /* مهم جداً لأيقونة القلب الصغير */
-            display: flex; /* باش نخليو العناصر اللي وسطو يتنسقو مزيان */
-            flex-direction: column; /* باش الصورة والـlabel يبقاو فوق بعضهم */
-            align-items: center; /* باش الصورة والـlabel يكونو ف الوسط */
-            justify-content: center; /* باش يكونو ف الوسط عمودياً */
+            display: flex; /* لترتيب العناصر داخله */
+            flex-direction: column; /* العناصر (صورة و ليبل) يكونوا فوق بعضهم */
+            align-items: center; /* توسيط العناصر أفقياً */
+            justify-content: center; /* توسيط العناصر عمودياً */
+            /* تأكد من عدم وجود أي background-image هنا يمكن تسبب في القلب الكبير */
+            background-image: none; /* تأكد أن لا توجد صورة خلفية */
         }
         .nft-image-container {
             background-color: #e0b0ff;
             border-radius: 15px;
             padding: 15px;
-            display: inline-block;
+            display: inline-block; /* ليحتوي المحتوى فقط ويكون في الوسط */
             position: relative;
         }
         .nft-image {
@@ -75,6 +77,8 @@
             width: 30px; /* حجم الأيقونة */
             height: 30px; /* حجم الأيقونة */
             color: white; /* لجعل لون الأيقونة أبيض */
+            /* stroke: currentColor; الأيقونة تستخدم stroke، لذا color هو اللي كيحدد لونها */
+            /* fill: none; تأكد أن fill هو none باش تبان كخط فقط */
         }
 
         h1 {
